@@ -1,0 +1,28 @@
+<table class="table table-bordered table-responsive table-striped  ">
+                    <thead class=" ">
+                    <tr>
+                        <th class=" espacoTabela">Responsável</th>
+                        <th class=" espacoTabela">Data</th>
+                        <th style=" espacoDenuncia">Denúncia</th>
+                        <th class=" espacoTabela">Status</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                     <% denuncias.forEach(denuncia => { %>
+                    <tr>
+                       <td><%= denuncia.responsavel || "Sem responsável" %></td>
+                       <td><%= denuncia.datahoraSubmissao.toISOString().replace(/T/, ' ').replace(/\..+/, '') %></td>
+                        <td class="tdDenuncia"><%= denuncia.descricao%></td>
+                        <td>
+                        <% if(denuncia.status == "Solucionada") { %>
+                            <span class="tagSolucionada " data-placement="bottom" data-toggle="popover" title="Solução" data-content="A denúncia foi aceita e o responsável foi punido"><%= denuncia.status %></span>
+                        <% } else if( denuncia.status == "Revisao") { %>
+                         <span class="tagRevisao ">Em <%= denuncia.status %></span>
+                        <% } else { %>
+                        <span class="tagCancelada" data-placement="bottom" data-toggle="popover" title="Motivo" data-content="A denúncia foi cancelada pelos membros da comissão"><%= denuncia.status %></span>
+                        <% } %>
+                        </td>
+                    </tr>
+                    </tbody>
+                     <% }); %> 
+                </table>       
