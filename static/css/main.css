@@ -1,3 +1,11 @@
+*{
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
 body{
     display: flex;
     flex-direction: column;
@@ -6,26 +14,37 @@ body{
 
 /*SECTION Header*/
 header{
-    font-family:font85995;
     background-color: #2A2B2E;
-    padding:20px 0px;
+    padding-top: 30px;
     margin-bottom:20px;
 }
 
 header h1{
-    font-family:font85995;
-    font-size: 55px;
+    font-size: 47px;
     color:#fff;
 }
 
 header a{
-    padding: 10px;
+    padding: 10px 10px 10px 0px;
+    color:rgb(255, 255, 255);
+    font-size: 17px;
 }
+
+header a:hover{
+    color:rgb(206, 204, 204);
+    text-decoration: none;
+}
+
 
 .header-display{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+header nav{
+    background-color: rgb(34, 34, 34);
+    padding: 10px;
 }
 
 /*SECTION Footer*/
@@ -114,4 +133,13 @@ textarea{
 
 .tamanhoEtiquetas{
     width: 25px;
+}
+
+.PrincipalError{
+    text-align: center;
+    font-size: 28px;
+}
+
+.PrincipalError img{
+   width: 500px;
 }

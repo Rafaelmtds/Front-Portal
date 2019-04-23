@@ -48,22 +48,28 @@ margin-top: 20px;
     justify-content: space-between;
 }
 
-.telaMembros{
-    display: flex;
-    justify-content: center;
-}
-
-.telaMembros span{
-    margin-bottom: 30px;
-    font-size: 20px;
-    text-align: center;
-}
-
 .card{
-    width: 25%;
-    margin: 15px;;
+    width: 250px;;
+    margin: 10px;
+}
+
+.telaCard{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .table td{
     vertical-align: top;
+}
+
+.espacoTabelaC{
+    width:10%; 
+}
+.espacoDenunciaC{
+    width:10%;
+    
+}
+.espacoObservacaoC{
+    widows: 10%;
 }

@@ -34,12 +34,12 @@
         <table class="table table-bordered table-responsive table-striped">
           <thead>
             <tr>
-              <th class=" espacoTabela">Email</th>
-              <th class=" espacoTabela">Responsável</th>
-              <th class=" espacoTabela">Data</th>
-              <th style=" espacoDenuncia">Denúncia</th>
-              <th class=" espacoTabela" class="statusFormat">Status</th>
-              <th class=" espacoTabela">Observação</th>
+              <th>Email</th>
+              <th>Responsável</th>
+              <th>Data</th>
+              <th>Denúncia</th>
+              <th>Status</th>
+              <th>Observação</th>
             </tr>
           </thead>
           <tbody class="tableMembroAutenticado">
@@ -59,7 +59,7 @@
                   </div>
                 </form>
               </td>
-              <td><%= denuncia.datahoraSubmissao.toISOString().replace(/T/, ' ').replace(/\..+/, '') %></td> 
+              <td>ola</td> 
               <td>
                 <%= denuncia.descricao%>
               </td>
@@ -68,15 +68,15 @@
                   <div class="form-row">
                     <select class="custom-select statusSelect" id="formStatus">
                       <option disabled value="0">Submetida</option>
-                      <option disabled value="1">Aprovada - Em Revisão pela Comissão</option>
-                      <option disabled value="2">Aprovada - Em Revisão pelo NAPE/Corpo Docente</option>
-                      <option selected value="3">Solucionada</option>
-                      <option disabled value="4">Cancelada</option>
+                      <option selected value="1">Aprovada - Em Revisão pela Comissão</option>
+                      <option value="2">Aprovada - Em Revisão pelo NAPE/Corpo Docente</option>
+                      <option value="3">Solucionada</option>
+                      <option value="4">Cancelada</option>
                     </select>
                   </div>
                 </form>
               </td>
-              <td><%= denuncia.descricao%>              </td>
+              <td><%= denuncia.descricao%></td>
             </tr>
             <% }); %>
           </tbody>

@@ -16,10 +16,12 @@ router.get('/', (req, res) => {
 });
 
 router.get('/comissao', (req, res) => {
-    res.render(process.cwd() + '/views/comissao', { membros :[{id:1, nome :"Rafael",email :"Teste@123.com",status:"ativo",periodo: '3' },
+    res.render(process.cwd() + '/views/comissao', {membros :[{id:1, nome :"Rafael",email :"Teste@123.com",status:"ativo",periodo: '3' },
                                                                      {id:2, nome :"Pedro",email :"Teste@123.com",status:"ativo",periodo: '4'},
                                                                      {id:3, nome :"Leo",email :"Teste@123.com",status:"ativo",periodo: '4'},
-                                                                     {id:4, nome :"Ana",email :"Teste@123.com",status:"ativo",periodo: '3'}]});
+                                                                     {id:4, nome :"Ana",email :"Teste@123.com",status:"ativo",periodo: '3'},
+                                                                        {id:5, nome :"Eduardo",email :"Teste@123.com",status:"ativo",periodo: '5'},
+                                                                        {id:6, nome :"Amanda",email :"Teste@123.com",status:"ativo",periodo: '7'}]});
 });
 
 router.get('/cadastro', (req, res) => {
@@ -31,10 +33,14 @@ router.get('/login', (req, res) => {
     res.render(process.cwd() + '/views/login', {});
 });
 
+router.get('/errorTest', (req, res) => {
+    res.render(process.cwd() + '/views/erro404', {});
+});
+
 router.get('/admin', (req, res) => {
     res.render(process.cwd() + '/views/admin', { denuncias :[{id:1, descricao :"Todos as descriçõe",email :"Teste@123.com",data: '25/02/2089',status:"Solucionada", responsavel:" Leonardo"},
     {id:2, descricao :"Acusação de agressão no lab 3 por um aluno de botanica",email :"rafael.sozua@uniriotec..com",data: '25/02/2089',status:"Cancelada", responsavel:" Rafael", observacao: "Ver as camneras do laboratiorio"},
-    {id:1, descricao :"Teste 3",email :"Teste@123.com",data: '25/02/2089',status:"Revisao", responsavel:" Andrezza", observacao: ""}  ]});
+    {id:1, descricao :"Teste 3",email :"Teste@123.com",data: '25/02/2019',status:"Revisao", responsavel:" Andrezza", observacao: ""}  ]});
 });
 
 
