@@ -3,23 +3,24 @@
     <head>
         <% include components/projectDefaultHead/projectDefaultHead %>
     </head>
-    <body >
+    <body>
         <% include components/header/projectDefaultHeader %>
-        <main>
-        <div class="container d-flex justify-content-around mt-5">
-        <form>
-  <div class="form-group ">
-    <label for="User">Usuário</label>
-    <input type="email" class="form-control"  id="user" name="user" placeholder="Digite o usuário">
-  </div>
-  <div class="form-group ">
-    <label for="senha">Senha</label>
-    <input type="password" class="form-control" id="senha" name="senha" placeholder="Senha">
-  </div>
-  <button type="submit" class="btn btn-dark mb-5 ">Acessar</button>
-</form>
-</div>
-<div class="mb-5"></div>
+        <main class=" container formLogin">
+          <div class="formEdicao">
+            <h3>Login</h3>
+              <form>
+                  <div class="form-group ">
+                    <label for="User">Usuário</label>
+                    <input type="email" class="form-control"  id="user" name="user" placeholder="Digite o usuário">
+                  </div>
+                  
+                  <div class="form-group ">
+                    <label for="senha">Senha</label>
+                    <input type="password" class="form-control" id="senha" name="senha" placeholder="Senha">
+                  </div>
+                  <button type="submit" class="btn btn-dark">Acessar</button>
+                </form>
+          </div>
         </main>
         <% include components/footer/projectDefaultFooter %>
 

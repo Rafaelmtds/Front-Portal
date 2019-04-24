@@ -143,3 +143,17 @@ textarea{
 .PrincipalError img{
    width: 500px;
 }
+
+.formLogin{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.formEdicao{
+    border:2px solid #dee3e4;
+    border-radius: 5px;
+    padding: 20px;
+    width: 60%;
+    margin: 44.5px 0px;
+}
